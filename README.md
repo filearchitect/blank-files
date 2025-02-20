@@ -25,3 +25,7 @@ There are a lot more file types that could be added here. If you'd like to add a
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+Some of the images and documents are from [VerifyTests/EmptyFiles](https://github.com/VerifyTests/EmptyFiles) and are licensed under the MIT License.
