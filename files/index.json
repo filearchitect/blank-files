@@ -35,6 +35,10 @@
         {
           "type": "txt",
           "url": "blank.txt"
+        },
+        {
+          "type": "pages",
+          "url": "blank.pages"
         }
       ]
     },
@@ -100,13 +104,23 @@
       ]
     },
     {
-      "name": "video",
+      "name": "video-editing",
       "files": [
         { "type": "aep", "url": "blank.aep" },
         {
           "type": "prproj",
           "url": "blank.prproj"
         }
+      ]
+    },
+    {
+      "name": "video",
+      "files": [
+        { "type": "avi", "url": "blank.avi" }
+        { "type": "m4v", "url": "blank.m4v" },
+        { "type": "mov", "url": "blank.mov" },
+        { "type": "mp4", "url": "blank.mp4" },
+        { "type": "webm", "url": "blank.webm" }
       ]
     }
   ]
