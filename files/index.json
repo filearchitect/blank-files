@@ -1,20 +1,18 @@
 {
   "categories": [
     {
-      "name": "design",
+      "name": "audio",
       "files": [
-        {
-          "type": "ai",
-          "url": "blank.ai"
-        },
-        {
-          "type": "psd",
-          "url": "blank.psd"
-        }
       ]
     },
     {
-      "name": "document",
+      "name": "audio-editing",
+      "files": [
+        { "type": "sesx", "url": "blank.sesx" },
+      ]
+    },
+    {
+      "name": "document-text",
       "files": [
         {
           "type": "docx",
@@ -39,6 +37,45 @@
         {
           "type": "pages",
           "url": "blank.pages"
+        }
+      ]
+    },
+    {
+      "name": "document-spreadsheet",
+      "files": [
+        {
+          "type": "ods",
+          "url": "blank.ods"
+        },
+        {
+          "type": "xlsx",
+          "url": "blank.xlsx"
+        }
+      ]
+    },
+    {
+      "name": "document-presentation",
+      "files": [
+        {
+          "type": "odp",
+          "url": "blank.odp"
+        },
+        {
+          "type": "pptx",
+          "url": "blank.pptx"
+        }
+      ]
+    },
+    {
+      "name": "image-editing",
+      "files": [
+        {
+          "type": "ai",
+          "url": "blank.ai"
+        },
+        {
+          "type": "psd",
+          "url": "blank.psd"
         }
       ]
     },
@@ -75,32 +112,6 @@
         { "type": "wdp", "url": "blank.wdp" },
         { "type": "webp", "url": "blank.webp" },
         { "type": "wmp", "url": "blank.wmp" }
-      ]
-    },
-    {
-      "name": "spreadsheet",
-      "files": [
-        {
-          "type": "ods",
-          "url": "blank.ods"
-        },
-        {
-          "type": "xlsx",
-          "url": "blank.xlsx"
-        }
-      ]
-    },
-    {
-      "name": "presentation",
-      "files": [
-        {
-          "type": "odp",
-          "url": "blank.odp"
-        },
-        {
-          "type": "pptx",
-          "url": "blank.pptx"
-        }
       ]
     },
     {
