@@ -6,19 +6,21 @@ A collection of minimal valid blank files in various formats for testing and dev
 
 We're grouping things in broad strokes categories. These categories are still a bit fluid and might change.
 
+- 3D
+- 3D-editing
 - audio
 - audio-editing
 - document-text
 - document-spreadsheet
 - document-presentation
-- video-editing
 - video
-- 3d
+- video-editing
 - CAD (Todo)
+- etc. (Suggested and pull requests welcomed)
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request and add files to the `files` directory and update `files/index.json` file.
+There are a lot more file types that could be added here. If you'd like to add a new file type, please feel free to submit a Pull Request and add files to the `files` directory and update `files/index.json` file.
 
 ## License
 
