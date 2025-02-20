@@ -1,6 +1,22 @@
 {
   "categories": [
     {
+      "name": "3D",
+      "files": [
+        { "type": "3ds", "url": "blank.3ds" },
+        { "type": "dae", "url": "blank.dae" },
+        { "type": "fbx", "url": "blank.fbx" },
+        { "type": "obj", "url": "blank.obj" }
+      ]
+    },
+    {
+      "name": "3D-editing",
+      "files": [
+        { "type": "blend", "url": "blank.blend" },
+        { "type": "c4d", "url": "blank.c4d" }
+      ]
+    },
+    {
       "name": "audio",
       "files": [
         { "type": "aac", "url": "blank.aac" },

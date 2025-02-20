@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2008/03/COLLADASchema" version="1.5.0">
+	<asset>
+		<contributor>
+			<authoring_tool>Cinema 4D 25.121 COLLADA Exporter</authoring_tool>
+		</contributor>
+		<created>2025-02-20T22:40:04Z</created>
+		<modified>2025-02-20T22:40:04Z</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_visual_scenes>
+		<visual_scene id="ID1">
+			<node/>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#ID1"/>
+	</scene>
+</COLLADA>
