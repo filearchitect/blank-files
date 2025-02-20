@@ -2,7 +2,16 @@
   "categories": [
     {
       "name": "audio",
-      "files": []
+      "files": [
+        { "type": "aac", "url": "blank.aac" },
+        { "type": "aiff", "url": "blank.aiff" },
+        { "type": "amr", "url": "blank.amr" },
+        { "type": "flac", "url": "blank.flac" },
+        { "type": "mp3", "url": "blank.mp3" },
+        { "type": "ogg", "url": "blank.ogg" },
+        { "type": "wav", "url": "blank.wav" },
+        { "type": "wma", "url": "blank.wma" }
+      ]
     },
     {
       "name": "audio-editing",
