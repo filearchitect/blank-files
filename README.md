@@ -6,14 +6,14 @@ A collection of minimal valid blank files in various formats for testing and dev
 
 We're grouping things in broad strokes categories. These categories are still a bit fluid and might change.
 
-- Design
-- Document
-- Image
-- Spreadsheet
-- Presentation
-- Video
-- Audio (Todo)
-- 3D (Todo)
+- audio
+- audio-editing
+- document-text
+- document-spreadsheet
+- document-presentation
+- video-editing
+- video
+- 3d
 - CAD (Todo)
 
 ## Contributing
