@@ -98,6 +98,16 @@
           "url": "blank.pptx"
         }
       ]
+    },
+    {
+      "name": "video",
+      "files": [
+        { "type": "aep", "url": "blank.aep" },
+        {
+          "type": "prproj",
+          "url": "blank.prproj"
+        }
+      ]
     }
   ]
 }
