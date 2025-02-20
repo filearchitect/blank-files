@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blank Files Download</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .category {
+        background: #f5f5f5;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+      .files {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+      h1 {
+        color: #333;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 0.5rem;
+      }
+      h2 {
+        margin: 0 0 0.5rem 0;
+        color: #666;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Available Blank Files</h1>
+    <div id="container"></div>
+
+    <script type="module">
+      import { listBlankFiles, getBlankFile } from "./src/index.js";
+
+      async function init() {
+        const container = document.getElementById("container");
+        const categories = await listBlankFiles();
+
+        categories.forEach((cat) => {
+          const categoryDiv = document.createElement("div");
+          categoryDiv.className = "category";
+
+          const heading = document.createElement("h2");
+          heading.textContent = cat.name;
+
+          const filesDiv = document.createElement("div");
+          filesDiv.className = "files";
+
+          cat.types.forEach((type) => {
+            const button = document.createElement("button");
+            button.textContent = type.toUpperCase();
+            button.onclick = async () => {
+              button.disabled = true;
+              button.style.cursor = "wait";
+
+              try {
+                const blob = await getBlankFile(cat.name, type);
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = `blank.${type}`;
+                a.click();
+                URL.revokeObjectURL(url);
+              } catch (error) {
+                console.error("Download failed:", error);
+                alert(`Failed to download file: ${error.message}`);
+              } finally {
+                button.disabled = false;
+                button.style.cursor = "pointer";
+              }
+            };
+            filesDiv.appendChild(button);
+          });
+
+          categoryDiv.appendChild(heading);
+          categoryDiv.appendChild(filesDiv);
+          container.appendChild(categoryDiv);
+        });
+      }
+
+      init().catch(console.error);
+    </script>
+  </body>
+</html>

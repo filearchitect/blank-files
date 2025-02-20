@@ -1,0 +1,31 @@
+{
+  "name": "@filearchitect/blank-files",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "list-blank-files": "./dist/cli.js"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "build:cli": "tsc src/cli.ts --outDir dist --module ES2020 --moduleResolution node --target ES2020",
+    "dev": "vite demo",
+    "preview": "vite preview --port 5174",
+    "show-files": "pnpm run build:cli && node dist/cli.js",
+    "start": "node server.js"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "files/**/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.7.3",
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
