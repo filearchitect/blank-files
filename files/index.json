@@ -5,11 +5,11 @@
       "files": [
         {
           "type": "ai",
-          "url": "empty.ai"
+          "url": "blank.ai"
         },
         {
           "type": "psd",
-          "url": "empty.psd"
+          "url": "blank.psd"
         }
       ]
     },
@@ -18,84 +18,84 @@
       "files": [
         {
           "type": "docx",
-          "url": "empty.docx"
+          "url": "blank.docx"
         },
         {
           "type": "odt",
-          "url": "empty.odt"
+          "url": "blank.odt"
         },
         {
           "type": "pdf",
-          "url": "empty.pdf"
+          "url": "blank.pdf"
         },
         {
           "type": "rtf",
-          "url": "empty.rtf"
+          "url": "blank.rtf"
         },
         {
           "type": "txt",
-          "url": "empty.txt"
+          "url": "blank.txt"
         }
       ]
     },
     {
       "category": "image",
       "files": [
-        { "type": "avif", "url": "empty.avif" },
-        { "type": "bmp", "url": "empty.bmp" },
-        { "type": "dds", "url": "empty.dds" },
-        { "type": "dib", "url": "empty.dib" },
-        { "type": "emf", "url": "empty.emf" },
-        { "type": "exif", "url": "empty.exif" },
-        { "type": "gif", "url": "empty.gif" },
-        { "type": "heic", "url": "empty.heic" },
-        { "type": "heif", "url": "empty.heif" },
-        { "type": "ico", "url": "empty.ico" },
-        { "type": "j2c", "url": "empty.j2c" },
-        { "type": "jfif", "url": "empty.jfif" },
-        { "type": "jp2", "url": "empty.jp2" },
-        { "type": "jpc", "url": "empty.jpc" },
-        { "type": "jpe", "url": "empty.jpe" },
-        { "type": "jpeg", "url": "empty.jpeg" },
-        { "type": "jpg", "url": "empty.jpg" },
-        { "type": "jxr", "url": "empty.jxr" },
-        { "type": "pbm", "url": "empty.pbm" },
-        { "type": "pcx", "url": "empty.pcx" },
-        { "type": "pgm", "url": "empty.pgm" },
-        { "type": "png", "url": "empty.png" },
-        { "type": "ppm", "url": "empty.ppm" },
-        { "type": "rle", "url": "empty.rle" },
-        { "type": "tga", "url": "empty.tga" },
-        { "type": "tif", "url": "empty.tif" },
-        { "type": "tiff", "url": "empty.tiff" },
-        { "type": "wdp", "url": "empty.wdp" },
-        { "type": "webp", "url": "empty.webp" },
-        { "type": "wmp", "url": "empty.wmp" }
+        { "type": "avif", "url": "blank.avif" },
+        { "type": "bmp", "url": "blank.bmp" },
+        { "type": "dds", "url": "blank.dds" },
+        { "type": "dib", "url": "blank.dib" },
+        { "type": "emf", "url": "blank.emf" },
+        { "type": "exif", "url": "blank.exif" },
+        { "type": "gif", "url": "blank.gif" },
+        { "type": "heic", "url": "blank.heic" },
+        { "type": "heif", "url": "blank.heif" },
+        { "type": "ico", "url": "blank.ico" },
+        { "type": "j2c", "url": "blank.j2c" },
+        { "type": "jfif", "url": "blank.jfif" },
+        { "type": "jp2", "url": "blank.jp2" },
+        { "type": "jpc", "url": "blank.jpc" },
+        { "type": "jpe", "url": "blank.jpe" },
+        { "type": "jpeg", "url": "blank.jpeg" },
+        { "type": "jpg", "url": "blank.jpg" },
+        { "type": "jxr", "url": "blank.jxr" },
+        { "type": "pbm", "url": "blank.pbm" },
+        { "type": "pcx", "url": "blank.pcx" },
+        { "type": "pgm", "url": "blank.pgm" },
+        { "type": "png", "url": "blank.png" },
+        { "type": "ppm", "url": "blank.ppm" },
+        { "type": "rle", "url": "blank.rle" },
+        { "type": "tga", "url": "blank.tga" },
+        { "type": "tif", "url": "blank.tif" },
+        { "type": "tiff", "url": "blank.tiff" },
+        { "type": "wdp", "url": "blank.wdp" },
+        { "type": "webp", "url": "blank.webp" },
+        { "type": "wmp", "url": "blank.wmp" }
       ]
     },
     {
-      "category": "sheet",
+      "category": "spreadsheet",
       "files": [
         {
           "type": "ods",
-          "url": "empty.ods"
+          "url": "blank.ods"
         },
         {
           "type": "xlsx",
-          "url": "empty.xlsx"
+          "url": "blank.xlsx"
         }
       ]
     },
     {
-      "category": "slide",
+      "category": "presentation",
       "files": [
         {
           "type": "odp",
-          "url": "empty.odp"
+          "url": "blank.odp"
         },
         {
           "type": "pptx",
-          "url": "empty.pptx"
+          "url": "blank.pptx"
         }
       ]
     }
