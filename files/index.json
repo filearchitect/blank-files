@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "category": "design",
+      "name": "design",
       "files": [
         {
           "type": "ai",
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "category": "document",
+      "name": "document",
       "files": [
         {
           "type": "docx",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "category": "image",
+      "name": "image",
       "files": [
         { "type": "avif", "url": "blank.avif" },
         { "type": "bmp", "url": "blank.bmp" },
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "category": "spreadsheet",
+      "name": "spreadsheet",
       "files": [
         {
           "type": "ods",
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "category": "presentation",
+      "name": "presentation",
       "files": [
         {
           "type": "odp",

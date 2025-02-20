@@ -3,13 +3,13 @@ import categoriesData from "../files/index.json" assert { type: "json" };
 
 export async function listBlankFiles() {
   return categoriesData.categories.map((cat) => ({
-    name: cat.category,
+    name: cat.name,
     types: cat.files.map((f) => f.type),
   }));
 }
 
 export async function getBlankFile(category: string, type: string) {
-  const fileUrl = `/files/${category}/empty.${type}`;
+  const fileUrl = `/files/${category}/blank.${type}`;
   console.log(`Fetching blank file: ${fileUrl}`);
 
   try {

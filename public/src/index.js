@@ -9,7 +9,7 @@ export async function listBlankFiles() {
     const response = await fetch("/files/index.json");
     const data = await response.json();
     return data.categories.map((cat) => ({
-      name: cat.category,
+      name: cat.name,
       types: cat.files.map((file) => file.type),
     }));
   } catch (error) {
@@ -23,9 +23,7 @@ export async function getBlankFile(category, type) {
     const response = await fetch("/files/index.json");
     const data = await response.json();
 
-    const categoryData = data.categories.find(
-      (cat) => cat.category === category
-    );
+    const categoryData = data.categories.find((cat) => cat.name === category);
     const fileData = categoryData?.files.find((file) => file.type === type);
 
     if (!fileData) {
