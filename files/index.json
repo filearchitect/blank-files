@@ -2,14 +2,11 @@
   "categories": [
     {
       "name": "audio",
-      "files": [
-      ]
+      "files": []
     },
     {
       "name": "audio-editing",
-      "files": [
-        { "type": "sesx", "url": "blank.sesx" },
-      ]
+      "files": [{ "type": "sesx", "url": "blank.sesx" }]
     },
     {
       "name": "document-text",
@@ -127,7 +124,7 @@
     {
       "name": "video",
       "files": [
-        { "type": "avi", "url": "blank.avi" }
+        { "type": "avi", "url": "blank.avi" },
         { "type": "m4v", "url": "blank.m4v" },
         { "type": "mov", "url": "blank.mov" },
         { "type": "mp4", "url": "blank.mp4" },
