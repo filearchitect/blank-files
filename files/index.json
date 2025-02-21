@@ -1,164 +1,73 @@
 {
-  "categories": [
+  "files": [
+    { "type": "3ds", "url": "blank.3ds", "category": "3D" },
+    { "type": "dae", "url": "blank.dae", "category": "3D" },
+    { "type": "fbx", "url": "blank.fbx", "category": "3D" },
+    { "type": "obj", "url": "blank.obj", "category": "3D" },
+    { "type": "blend", "url": "blank.blend", "category": "3D-editing" },
+    { "type": "c4d", "url": "blank.c4d", "category": "3D-editing" },
+    { "type": "aac", "url": "blank.aac", "category": "audio" },
+    { "type": "aiff", "url": "blank.aiff", "category": "audio" },
+    { "type": "amr", "url": "blank.amr", "category": "audio" },
+    { "type": "flac", "url": "blank.flac", "category": "audio" },
+    { "type": "mp3", "url": "blank.mp3", "category": "audio" },
+    { "type": "ogg", "url": "blank.ogg", "category": "audio" },
+    { "type": "wav", "url": "blank.wav", "category": "audio" },
+    { "type": "wma", "url": "blank.wma", "category": "audio" },
+    { "type": "sesx", "url": "blank.sesx", "category": "audio-editing" },
+    { "type": "docx", "url": "blank.docx", "category": "document-text" },
+    { "type": "odt", "url": "blank.odt", "category": "document-text" },
+    { "type": "pdf", "url": "blank.pdf", "category": "document-text" },
+    { "type": "rtf", "url": "blank.rtf", "category": "document-text" },
+    { "type": "txt", "url": "blank.txt", "category": "document-text" },
+    { "type": "pages", "url": "blank.pages", "category": "document-text" },
+    { "type": "ods", "url": "blank.ods", "category": "document-spreadsheet" },
+    { "type": "xlsx", "url": "blank.xlsx", "category": "document-spreadsheet" },
+    { "type": "odp", "url": "blank.odp", "category": "document-presentation" },
     {
-      "name": "3D",
-      "files": [
-        { "type": "3ds", "url": "blank.3ds" },
-        { "type": "dae", "url": "blank.dae" },
-        { "type": "fbx", "url": "blank.fbx" },
-        { "type": "obj", "url": "blank.obj" }
-      ]
+      "type": "pptx",
+      "url": "blank.pptx",
+      "category": "document-presentation"
     },
-    {
-      "name": "3D-editing",
-      "files": [
-        { "type": "blend", "url": "blank.blend" },
-        { "type": "c4d", "url": "blank.c4d" }
-      ]
-    },
-    {
-      "name": "audio",
-      "files": [
-        { "type": "aac", "url": "blank.aac" },
-        { "type": "aiff", "url": "blank.aiff" },
-        { "type": "amr", "url": "blank.amr" },
-        { "type": "flac", "url": "blank.flac" },
-        { "type": "mp3", "url": "blank.mp3" },
-        { "type": "ogg", "url": "blank.ogg" },
-        { "type": "wav", "url": "blank.wav" },
-        { "type": "wma", "url": "blank.wma" }
-      ]
-    },
-    {
-      "name": "audio-editing",
-      "files": [{ "type": "sesx", "url": "blank.sesx" }]
-    },
-    {
-      "name": "document-text",
-      "files": [
-        {
-          "type": "docx",
-          "url": "blank.docx"
-        },
-        {
-          "type": "odt",
-          "url": "blank.odt"
-        },
-        {
-          "type": "pdf",
-          "url": "blank.pdf"
-        },
-        {
-          "type": "rtf",
-          "url": "blank.rtf"
-        },
-        {
-          "type": "txt",
-          "url": "blank.txt"
-        },
-        {
-          "type": "pages",
-          "url": "blank.pages"
-        }
-      ]
-    },
-    {
-      "name": "document-spreadsheet",
-      "files": [
-        {
-          "type": "ods",
-          "url": "blank.ods"
-        },
-        {
-          "type": "xlsx",
-          "url": "blank.xlsx"
-        }
-      ]
-    },
-    {
-      "name": "document-presentation",
-      "files": [
-        {
-          "type": "odp",
-          "url": "blank.odp"
-        },
-        {
-          "type": "pptx",
-          "url": "blank.pptx"
-        }
-      ]
-    },
-    {
-      "name": "image-editing",
-      "files": [
-        {
-          "type": "ai",
-          "url": "blank.ai"
-        },
-        {
-          "type": "psd",
-          "url": "blank.psd"
-        },
-        {
-          "type": "psb",
-          "url": "blank.psb"
-        }
-      ]
-    },
-    {
-      "name": "image",
-      "files": [
-        { "type": "avif", "url": "blank.avif" },
-        { "type": "bmp", "url": "blank.bmp" },
-        { "type": "dds", "url": "blank.dds" },
-        { "type": "dib", "url": "blank.dib" },
-        { "type": "emf", "url": "blank.emf" },
-        { "type": "exif", "url": "blank.exif" },
-        { "type": "gif", "url": "blank.gif" },
-        { "type": "heic", "url": "blank.heic" },
-        { "type": "heif", "url": "blank.heif" },
-        { "type": "ico", "url": "blank.ico" },
-        { "type": "j2c", "url": "blank.j2c" },
-        { "type": "jfif", "url": "blank.jfif" },
-        { "type": "jp2", "url": "blank.jp2" },
-        { "type": "jpc", "url": "blank.jpc" },
-        { "type": "jpe", "url": "blank.jpe" },
-        { "type": "jpeg", "url": "blank.jpeg" },
-        { "type": "jpg", "url": "blank.jpg" },
-        { "type": "jxr", "url": "blank.jxr" },
-        { "type": "pbm", "url": "blank.pbm" },
-        { "type": "pcx", "url": "blank.pcx" },
-        { "type": "pgm", "url": "blank.pgm" },
-        { "type": "png", "url": "blank.png" },
-        { "type": "ppm", "url": "blank.ppm" },
-        { "type": "rle", "url": "blank.rle" },
-        { "type": "tga", "url": "blank.tga" },
-        { "type": "tif", "url": "blank.tif" },
-        { "type": "tiff", "url": "blank.tiff" },
-        { "type": "wdp", "url": "blank.wdp" },
-        { "type": "webp", "url": "blank.webp" },
-        { "type": "wmp", "url": "blank.wmp" }
-      ]
-    },
-    {
-      "name": "video-editing",
-      "files": [
-        { "type": "aep", "url": "blank.aep" },
-        {
-          "type": "prproj",
-          "url": "blank.prproj"
-        }
-      ]
-    },
-    {
-      "name": "video",
-      "files": [
-        { "type": "avi", "url": "blank.avi" },
-        { "type": "m4v", "url": "blank.m4v" },
-        { "type": "mov", "url": "blank.mov" },
-        { "type": "mp4", "url": "blank.mp4" },
-        { "type": "webm", "url": "blank.webm" }
-      ]
-    }
+    { "type": "ai", "url": "blank.ai", "category": "image-editing" },
+    { "type": "psd", "url": "blank.psd", "category": "image-editing" },
+    { "type": "psb", "url": "blank.psb", "category": "image-editing" },
+    { "type": "avif", "url": "blank.avif", "category": "image" },
+    { "type": "bmp", "url": "blank.bmp", "category": "image" },
+    { "type": "dds", "url": "blank.dds", "category": "image" },
+    { "type": "dib", "url": "blank.dib", "category": "image" },
+    { "type": "emf", "url": "blank.emf", "category": "image" },
+    { "type": "exif", "url": "blank.exif", "category": "image" },
+    { "type": "gif", "url": "blank.gif", "category": "image" },
+    { "type": "heic", "url": "blank.heic", "category": "image" },
+    { "type": "heif", "url": "blank.heif", "category": "image" },
+    { "type": "ico", "url": "blank.ico", "category": "image" },
+    { "type": "j2c", "url": "blank.j2c", "category": "image" },
+    { "type": "jfif", "url": "blank.jfif", "category": "image" },
+    { "type": "jp2", "url": "blank.jp2", "category": "image" },
+    { "type": "jpc", "url": "blank.jpc", "category": "image" },
+    { "type": "jpe", "url": "blank.jpe", "category": "image" },
+    { "type": "jpeg", "url": "blank.jpeg", "category": "image" },
+    { "type": "jpg", "url": "blank.jpg", "category": "image" },
+    { "type": "jxr", "url": "blank.jxr", "category": "image" },
+    { "type": "pbm", "url": "blank.pbm", "category": "image" },
+    { "type": "pcx", "url": "blank.pcx", "category": "image" },
+    { "type": "pgm", "url": "blank.pgm", "category": "image" },
+    { "type": "png", "url": "blank.png", "category": "image" },
+    { "type": "ppm", "url": "blank.ppm", "category": "image" },
+    { "type": "rle", "url": "blank.rle", "category": "image" },
+    { "type": "tga", "url": "blank.tga", "category": "image" },
+    { "type": "tif", "url": "blank.tif", "category": "image" },
+    { "type": "tiff", "url": "blank.tiff", "category": "image" },
+    { "type": "wdp", "url": "blank.wdp", "category": "image" },
+    { "type": "webp", "url": "blank.webp", "category": "image" },
+    { "type": "wmp", "url": "blank.wmp", "category": "image" },
+    { "type": "aep", "url": "blank.aep", "category": "video-editing" },
+    { "type": "prproj", "url": "blank.prproj", "category": "video-editing" },
+    { "type": "avi", "url": "blank.avi", "category": "video" },
+    { "type": "m4v", "url": "blank.m4v", "category": "video" },
+    { "type": "mov", "url": "blank.mov", "category": "video" },
+    { "type": "mp4", "url": "blank.mp4", "category": "video" },
+    { "type": "webm", "url": "blank.webm", "category": "video" }
   ]
 }

@@ -1,10 +1,29 @@
 // Browser-only version
 import categoriesData from "../files/index.json" assert { type: "json" };
 
+interface FileData {
+  type: string;
+  url: string;
+  category: string;
+}
+
 export async function listBlankFiles() {
-  return categoriesData.categories.map((cat) => ({
-    name: cat.name,
-    types: cat.files.map((f) => f.type),
+  // Group files by category
+  const groupedFiles = categoriesData.files.reduce(
+    (acc: Record<string, string[]>, file: FileData) => {
+      if (!acc[file.category]) {
+        acc[file.category] = [];
+      }
+      acc[file.category].push(file.type);
+      return acc;
+    },
+    {}
+  );
+
+  // Convert to array format expected by UI
+  return Object.entries(groupedFiles).map(([category, types]) => ({
+    name: category,
+    types: types,
   }));
 }
 

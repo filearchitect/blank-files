@@ -8,9 +8,20 @@ export async function listBlankFiles() {
   try {
     const response = await fetch("/files/index.json");
     const data = await response.json();
-    return data.categories.map((cat) => ({
-      name: cat.name,
-      types: cat.files.map((file) => file.type),
+
+    // Group files by category
+    const groupedFiles = data.files.reduce((acc, file) => {
+      if (!acc[file.category]) {
+        acc[file.category] = [];
+      }
+      acc[file.category].push(file.type);
+      return acc;
+    }, {});
+
+    // Convert to array format expected by UI
+    return Object.entries(groupedFiles).map(([category, types]) => ({
+      name: category,
+      types: types,
     }));
   } catch (error) {
     console.error("Error loading file index:", error);
@@ -23,8 +34,9 @@ export async function getBlankFile(category, type) {
     const response = await fetch("/files/index.json");
     const data = await response.json();
 
-    const categoryData = data.categories.find((cat) => cat.name === category);
-    const fileData = categoryData?.files.find((file) => file.type === type);
+    const fileData = data.files.find(
+      (file) => file.category === category && file.type === type
+    );
 
     if (!fileData) {
       throw new Error("File not found");
@@ -37,6 +49,6 @@ export async function getBlankFile(category, type) {
     return await fileResponse.blob();
   } catch (error) {
     console.error("Error fetching file:", error);
-    return null;
+    throw error;
   }
 }
