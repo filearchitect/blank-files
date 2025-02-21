@@ -19,7 +19,6 @@
     { "type": "odt", "url": "blank.odt", "category": "document-text" },
     { "type": "pdf", "url": "blank.pdf", "category": "document-text" },
     { "type": "rtf", "url": "blank.rtf", "category": "document-text" },
-    { "type": "txt", "url": "blank.txt", "category": "document-text" },
     { "type": "pages", "url": "blank.pages", "category": "document-text" },
     { "type": "ods", "url": "blank.ods", "category": "document-spreadsheet" },
     { "type": "xlsx", "url": "blank.xlsx", "category": "document-spreadsheet" },
