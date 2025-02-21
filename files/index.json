@@ -31,6 +31,7 @@
     { "type": "ai", "url": "blank.ai", "category": "image-editing" },
     { "type": "psd", "url": "blank.psd", "category": "image-editing" },
     { "type": "psb", "url": "blank.psb", "category": "image-editing" },
+    { "type": "fig", "url": "blank.fig", "category": "image-editing" },
     { "type": "avif", "url": "blank.avif", "category": "image" },
     { "type": "bmp", "url": "blank.bmp", "category": "image" },
     { "type": "dds", "url": "blank.dds", "category": "image" },
