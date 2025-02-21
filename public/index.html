@@ -51,52 +51,80 @@
     <div id="container"></div>
 
     <script type="module">
+      // Add direct fetch to debug
+      fetch("/files/files.json")
+        .then((res) => {
+          if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+          return res.json();
+        })
+        .then((data) => {
+          console.log("Successfully loaded files.json:", data);
+        })
+        .catch((error) => {
+          console.error("Failed to load files.json:", error);
+        });
+
       import { listBlankFiles, getBlankFile } from "./src/index.js";
 
       async function init() {
-        const container = document.getElementById("container");
-        const categories = await listBlankFiles();
+        try {
+          const container = document.getElementById("container");
+          const categories = await listBlankFiles();
 
-        categories.forEach((cat) => {
-          const categoryDiv = document.createElement("div");
-          categoryDiv.className = "category";
+          console.log("Categories loaded:", categories);
 
-          const heading = document.createElement("h2");
-          heading.textContent = cat.name;
+          if (!categories || categories.length === 0) {
+            container.innerHTML =
+              "<p>No categories found. Please check the console for errors.</p>";
+            return;
+          }
 
-          const filesDiv = document.createElement("div");
-          filesDiv.className = "files";
+          categories.forEach((cat) => {
+            const categoryDiv = document.createElement("div");
+            categoryDiv.className = "category";
 
-          cat.types.forEach((type) => {
-            const button = document.createElement("button");
-            button.textContent = type.toUpperCase();
-            button.onclick = async () => {
-              button.disabled = true;
-              button.style.cursor = "wait";
+            const heading = document.createElement("h2");
+            heading.textContent = cat.name;
 
-              try {
-                const blob = await getBlankFile(cat.name, type);
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement("a");
-                a.href = url;
-                a.download = `blank.${type}`;
-                a.click();
-                URL.revokeObjectURL(url);
-              } catch (error) {
-                console.error("Download failed:", error);
-                alert(`Failed to download file: ${error.message}`);
-              } finally {
-                button.disabled = false;
-                button.style.cursor = "pointer";
-              }
-            };
-            filesDiv.appendChild(button);
+            const filesDiv = document.createElement("div");
+            filesDiv.className = "files";
+
+            cat.types.forEach((type) => {
+              const button = document.createElement("button");
+              button.textContent = type.toUpperCase();
+              button.onclick = async () => {
+                button.disabled = true;
+                button.style.cursor = "wait";
+
+                try {
+                  const blob = await getBlankFile(cat.name, type);
+                  const url = URL.createObjectURL(blob);
+                  const a = document.createElement("a");
+                  a.href = url;
+                  a.download = `blank.${type}`;
+                  a.click();
+                  URL.revokeObjectURL(url);
+                } catch (error) {
+                  console.error("Download failed:", error);
+                  alert(`Failed to download file: ${error.message}`);
+                } finally {
+                  button.disabled = false;
+                  button.style.cursor = "pointer";
+                }
+              };
+              filesDiv.appendChild(button);
+            });
+
+            categoryDiv.appendChild(heading);
+            categoryDiv.appendChild(filesDiv);
+            container.appendChild(categoryDiv);
           });
-
-          categoryDiv.appendChild(heading);
-          categoryDiv.appendChild(filesDiv);
-          container.appendChild(categoryDiv);
-        });
+        } catch (error) {
+          console.error("Initialization failed:", error);
+          document.getElementById(
+            "container"
+          ).innerHTML = `<p>Failed to initialize: ${error.message}</p>`;
+        }
       }
 
       init().catch(console.error);

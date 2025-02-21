@@ -1,5 +1,5 @@
 // Browser-only version
-import categoriesData from "../files/index.json" assert { type: "json" };
+import categoriesData from "../files/files.json" assert { type: "json" };
 
 interface FileData {
   type: string;
@@ -28,7 +28,7 @@ export async function listBlankFiles() {
 }
 
 export async function getBlankFile(category: string, type: string) {
-  const fileUrl = `/files/${category}/blank.${type}`;
+  const fileUrl = `/files/blank.${type}`;
   console.log(`Fetching blank file: ${fileUrl}`);
 
   try {
@@ -57,6 +57,6 @@ export async function getBlankFile(category: string, type: string) {
     return new Blob([buffer]);
   } catch (error) {
     console.error(`Error fetching ${category}/${type}:`, error);
-    throw error; // Re-throw to let the UI handle the error
+    throw error;
   }
 }

@@ -1,13 +1,11 @@
-const BLANK_FILES = {
-  documents: ["doc", "docx", "pdf", "txt"],
-  images: ["jpg", "png", "gif"],
-  spreadsheets: ["xls", "xlsx", "csv"],
-};
-
 export async function listBlankFiles() {
   try {
-    const response = await fetch("/files/index.json");
+    const response = await fetch("/files/files.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     const data = await response.json();
+    console.log("Loaded files data:", data);
 
     // Group files by category
     const groupedFiles = data.files.reduce((acc, file) => {
@@ -25,26 +23,18 @@ export async function listBlankFiles() {
     }));
   } catch (error) {
     console.error("Error loading file index:", error);
-    return [];
+    throw error; // Re-throw to let the UI handle it
   }
 }
 
 export async function getBlankFile(category, type) {
   try {
-    const response = await fetch("/files/index.json");
-    const data = await response.json();
+    const fileUrl = `/files/blank.${type}`;
+    console.log("Fetching file from:", fileUrl);
 
-    const fileData = data.files.find(
-      (file) => file.category === category && file.type === type
-    );
-
-    if (!fileData) {
-      throw new Error("File not found");
-    }
-
-    const fileResponse = await fetch(`/files/${category}/${fileData.url}`);
+    const fileResponse = await fetch(fileUrl);
     if (!fileResponse.ok) {
-      throw new Error("File not found");
+      throw new Error(`HTTP error! status: ${fileResponse.status}`);
     }
     return await fileResponse.blob();
   } catch (error) {
