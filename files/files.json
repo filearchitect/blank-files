@@ -14,6 +14,7 @@
     { "type": "ogg", "url": "blank.ogg", "category": "audio" },
     { "type": "wav", "url": "blank.wav", "category": "audio" },
     { "type": "wma", "url": "blank.wma", "category": "audio" },
+    { "type": "logicx", "url": "blank.logicx", "category": "audio-editing" },
     { "type": "sesx", "url": "blank.sesx", "category": "audio-editing" },
     { "type": "docx", "url": "blank.docx", "category": "document-text" },
     { "type": "odt", "url": "blank.odt", "category": "document-text" },
@@ -28,10 +29,6 @@
       "url": "blank.pptx",
       "category": "document-presentation"
     },
-    { "type": "ai", "url": "blank.ai", "category": "image-editing" },
-    { "type": "psd", "url": "blank.psd", "category": "image-editing" },
-    { "type": "psb", "url": "blank.psb", "category": "image-editing" },
-    { "type": "fig", "url": "blank.fig", "category": "image-editing" },
     { "type": "avif", "url": "blank.avif", "category": "image" },
     { "type": "bmp", "url": "blank.bmp", "category": "image" },
     { "type": "dds", "url": "blank.dds", "category": "image" },
@@ -62,12 +59,16 @@
     { "type": "wdp", "url": "blank.wdp", "category": "image" },
     { "type": "webp", "url": "blank.webp", "category": "image" },
     { "type": "wmp", "url": "blank.wmp", "category": "image" },
-    { "type": "aep", "url": "blank.aep", "category": "video-editing" },
-    { "type": "prproj", "url": "blank.prproj", "category": "video-editing" },
+    { "type": "ai", "url": "blank.ai", "category": "image-editing" },
+    { "type": "psd", "url": "blank.psd", "category": "image-editing" },
+    { "type": "psb", "url": "blank.psb", "category": "image-editing" },
+    { "type": "fig", "url": "blank.fig", "category": "image-editing" },
     { "type": "avi", "url": "blank.avi", "category": "video" },
     { "type": "m4v", "url": "blank.m4v", "category": "video" },
     { "type": "mov", "url": "blank.mov", "category": "video" },
     { "type": "mp4", "url": "blank.mp4", "category": "video" },
     { "type": "webm", "url": "blank.webm", "category": "video" }
+    { "type": "aep", "url": "blank.aep", "category": "video-editing" },
+    { "type": "prproj", "url": "blank.prproj", "category": "video-editing" },
   ]
 }
