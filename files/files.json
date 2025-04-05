@@ -14,7 +14,12 @@
     { "type": "ogg", "url": "blank.ogg", "category": "audio" },
     { "type": "wav", "url": "blank.wav", "category": "audio" },
     { "type": "wma", "url": "blank.wma", "category": "audio" },
-    { "type": "logicx", "url": "blank.logicx", "category": "audio-editing" },
+    {
+      "type": "logicx",
+      "url": "blank.logicx",
+      "category": "audio-editing",
+      "package": true
+    },
     { "type": "sesx", "url": "blank.sesx", "category": "audio-editing" },
     { "type": "docx", "url": "blank.docx", "category": "document-text" },
     { "type": "odt", "url": "blank.odt", "category": "document-text" },
