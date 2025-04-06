@@ -16,7 +16,7 @@
     { "type": "wma", "url": "blank.wma", "category": "audio" },
     {
       "type": "logicx",
-      "url": "blank.logicx",
+      "url": "blank.logicx.zip",
       "category": "audio-editing",
       "package": true
     },
