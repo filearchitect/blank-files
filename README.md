@@ -1,6 +1,8 @@
 # Blank files
 
-A collection of minimal valid blank files in various formats for testing and development purposes. This is aimed at binary files, not text files.
+A collection of minimal valid blank files in various formats. These files will be valid and open in the right software.
+
+This collection focuses mainly on binary work files, not text-based files.
 
 ## Categories
 
