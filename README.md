@@ -24,6 +24,8 @@ We're grouping things in broad strokes categories. These categories are still a 
 
 There are a lot more file types that could be added here. If you'd like to add a new file type, please feel free to submit a Pull Request and add files to the `files` directory and update `files/index.json` file.
 
+Keep your file as small and minimal as possible.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
