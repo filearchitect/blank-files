@@ -26,6 +26,7 @@
     },
     { "type": "sesx", "url": "blank.sesx", "category": "audio-editing" },
     { "type": "docx", "url": "blank.docx", "category": "document-text" },
+    { "type": "epub", "url": "blank.epub", "category": "document-text" },
     { "type": "odt", "url": "blank.odt", "category": "document-text" },
     { "type": "pdf", "url": "blank.pdf", "category": "document-text" },
     { "type": "rtf", "url": "blank.rtf", "category": "document-text" },
@@ -76,9 +77,14 @@
     { "type": "avi", "url": "blank.avi", "category": "video" },
     { "type": "m4v", "url": "blank.m4v", "category": "video" },
     { "type": "mkv", "url": "blank.mkv", "category": "video" },
+    { "type": "mpeg", "url": "blank.mpeg", "category": "video" },
+    { "type": "mpg", "url": "blank.mpg", "category": "video" },
     { "type": "mov", "url": "blank.mov", "category": "video" },
     { "type": "mp4", "url": "blank.mp4", "category": "video" },
     { "type": "webm", "url": "blank.webm", "category": "video" },
+    { "type": "ttf", "url": "blank.ttf", "category": "font" },
+    { "type": "woff", "url": "blank.woff", "category": "font" },
+    { "type": "woff2", "url": "blank.woff2", "category": "font" },
     { "type": "aep", "url": "blank.aep", "category": "video-editing" },
     { "type": "prproj", "url": "blank.prproj", "category": "video-editing" }
   ]
