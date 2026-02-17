@@ -1,6 +1,6 @@
 # Blank Files
 
-A collection of minimal valid blank files in various formats. These files are valid and open in the right software. This repo is the canonical source for the [Blank Files website](https://blankfiles.com) and is consumable via CDN or the NPM package `@filearchitect/blank-files`.
+A collection of minimal valid blank files in various formats. These files are valid and open in the right software. This repo is the canonical source for the [Blank Files website](https://blankfiles.com) and is consumable via CDN.
 
 This collection focuses mainly on binary work files, not text-based files.
 
@@ -29,7 +29,7 @@ Then open a Pull Request.
 
 ## Categories
 
-These categories are used for grouping on the website and in the NPM package. They are broad and may evolve.
+These categories are used for grouping on the website and in catalog consumers. They are broad and may evolve.
 
 - 3D
 - 3D-editing
@@ -61,14 +61,11 @@ Example: `https://raw.githubusercontent.com/filearchitect/blank-files/main/files
 
 **Note:** Using `raw.githubusercontent.com` as the base is subject to GitHub rate limits. For higher traffic, use a CDN that mirrors the repo (e.g. [jsDelivr](https://www.jsdelivr.com)).
 
-### NPM package
+### JavaScript package status
 
-Install: `npm install @filearchitect/blank-files` (or pnpm/yarn).
+The repository contains package code in `package.json` and `src/`, but `@filearchitect/blank-files` is currently not published on npm.
 
-From [src/index.ts](src/index.ts):
-
-- **`listBlankFiles()`** — Returns a list of categories and their file types (for UI grouping). Uses the bundled `files/files.json`.
-- **`getBlankFile(category, type)`** — Fetches the file from `/files/blank.{type}` and returns a `Blob`. Expects a local or same-origin server serving the `files/` directory unless you use a custom base URL (e.g. when running with the included `server.js` or against the live website’s download proxy).
+Until publishing, consume files via CDN endpoints above or directly from this repository.
 
 ## Automation
 
