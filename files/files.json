@@ -3,7 +3,9 @@
     { "type": "3ds", "url": "blank.3ds", "category": "3D" },
     { "type": "dae", "url": "blank.dae", "category": "3D" },
     { "type": "fbx", "url": "blank.fbx", "category": "3D" },
+    { "type": "glb", "url": "blank.glb", "category": "3D" },
     { "type": "obj", "url": "blank.obj", "category": "3D" },
+    { "type": "stl", "url": "blank.stl", "category": "3D" },
     { "type": "blend", "url": "blank.blend", "category": "3D-editing" },
     { "type": "c4d", "url": "blank.c4d", "category": "3D-editing" },
     { "type": "aac", "url": "blank.aac", "category": "audio" },
@@ -33,6 +35,8 @@
     { "type": "pages", "url": "blank.pages", "category": "document-text" },
     { "type": "ods", "url": "blank.ods", "category": "document-spreadsheet" },
     { "type": "xlsx", "url": "blank.xlsx", "category": "document-spreadsheet" },
+    { "type": "xls", "url": "blank.xls", "category": "document-spreadsheet" },
+    { "type": "xlsm", "url": "blank.xlsm", "category": "document-spreadsheet" },
     { "type": "sqlite", "url": "blank.sqlite", "category": "database" },
     { "type": "sqlite3", "url": "blank.sqlite3", "category": "database" },
     { "type": "db", "url": "blank.db", "category": "database" },
@@ -99,6 +103,9 @@
     { "type": "ttf", "url": "blank.ttf", "category": "font" },
     { "type": "woff", "url": "blank.woff", "category": "font" },
     { "type": "woff2", "url": "blank.woff2", "category": "font" },
+    { "type": "7z", "url": "blank.7z", "category": "archive" },
+    { "type": "gz", "url": "blank.gz", "category": "archive" },
+    { "type": "zip", "url": "blank.zip", "category": "archive" },
     { "type": "aep", "url": "blank.aep", "category": "video-editing" },
     { "type": "prproj", "url": "blank.prproj", "category": "video-editing" }
   ]
