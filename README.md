@@ -67,6 +67,22 @@ The repository contains package code in `package.json` and `src/`, but `@filearc
 
 Until publishing, consume files via CDN endpoints above or directly from this repository.
 
+### MCP server (published)
+
+For agent/tool access, use the published MCP server package:
+
+- npm: `@filearchitect/blankfiles-mcp` (latest: `1.0.1`)
+- MCP server id: `io.github.filearchitect/blankfiles-mcp`
+- Registry listing: `https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.filearchitect/blankfiles-mcp`
+- Source: `https://github.com/filearchitect/blankfiles-website/tree/main/packages/blankfiles-mcp`
+
+Install and run:
+
+```bash
+npm install -g @filearchitect/blankfiles-mcp
+blankfiles-mcp
+```
+
 ## Automation
 
 [.github/workflows/zip-files.yml](.github/workflows/zip-files.yml) runs on push to `main` when `files/**` changes (or on manual dispatch). It creates a ZIP of the `files/` directory and uploads it to a GitHub Release with tag `latest`. Use this artifact if you need a single ZIP of all blank files.
