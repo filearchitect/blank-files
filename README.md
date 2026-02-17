@@ -4,6 +4,8 @@ A collection of minimal valid blank files in various formats. These files are va
 
 This collection focuses mainly on binary work files, not text-based files.
 
+Current catalog size: **104 formats**.
+
 ## Catalog schema (for bots and contributors)
 
 The file list is in [files/files.json](files/files.json). It has a single key `files`, an array of objects:
@@ -31,17 +33,22 @@ These categories are used for grouping on the website and in the NPM package. Th
 
 - 3D
 - 3D-editing
+- archive
 - audio
 - audio-editing
+- data
+- database
 - document-text
 - document-spreadsheet
 - document-presentation
+- font
 - image
 - image-editing
+- network
 - video
 - video-editing
-- CAD (Todo)
-- etc. (suggestions and pull requests welcome)
+
+Suggestions and pull requests for additional binary formats are welcome.
 
 ## Consuming the catalog
 
@@ -52,7 +59,7 @@ These categories are used for grouping on the website and in the NPM package. Th
 
 Example: `https://raw.githubusercontent.com/filearchitect/blank-files/main/files/blank.xlsx`.
 
-**Note:** Using `raw.githubusercontent.com` as the base is subject to GitHub rate limits. For higher traffic, use a CDN that mirrors the repo (e.g. [Statically](https://statically.io), [jsDelivr](https://www.jsdelivr.com)).
+**Note:** Using `raw.githubusercontent.com` as the base is subject to GitHub rate limits. For higher traffic, use a CDN that mirrors the repo (e.g. [jsDelivr](https://www.jsdelivr.com)).
 
 ### NPM package
 
